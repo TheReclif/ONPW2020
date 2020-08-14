@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<TreeDef>
+  <ChoiceNode type="ChoiceDialog" who="Dad" choice_0="Yes" choiceNode_0="Yes" choice_1="No" choiceNode_1="No" choice_2="Joke about it" choiceNode_2="Joke" choice_3="Give me more money" choiceNode_3="GiveMore">Are you winning, son?</ChoiceNode>
+  <Yes type="ShowDialog" who="Me" next="">I'm always winning, dad.</Yes>
+  <No type="ShowDialog" who="Me" next="">No, but yes.</No>
+  <Joke type="ShowDialog" who="Me" next="">Haha. Yes.</Joke>
+  <GiveMore type="ShowDialog" who="Me" next="DadsNo">I need more money.</GiveMore>
+  <DadsNo type="ShowDialog" who="Dad" next="">No, son. No money for you.</DadsNo>
+</TreeDef>
